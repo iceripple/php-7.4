@@ -1,8 +1,8 @@
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-# Dockerfile for runner668/php:7.4
+# Dockerfile for iceripple/php:8.0
 #
 # Based on webdevops/Dockerfile
-# (https://github.com/webdevops/Dockerfile/tree/master/docker/php-official/7.4)
+# (https://github.com/webdevops/Dockerfile/tree/master/docker/php-official/8.0)
 #
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -30,7 +30,7 @@ RUN mkdir -p \
     && "/baselayout/sbin/gosu" nobody true
 
 
-FROM php:7.4-fpm-buster
+FROM php:8.0-fpm-buster
 
 LABEL maintainer=info@webdevops.io \
       vendor=WebDevOps.io \
